@@ -42,6 +42,7 @@ table {
   color: inherit;
   border-collapse: collapse;
   opacity: 0.75;
+  font-style: italic;
 }
 
 th {
