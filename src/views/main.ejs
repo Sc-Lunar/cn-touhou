@@ -48,26 +48,7 @@
         <td><%= content.id %></td>
         <td><%= content.contentType === 0 ? "乐曲(Songs)" : content.contentType=== 1 ? "按键皮肤(NoteSkins)" : content.contentType === 2 ? "打击音效(SoundEffects)": content.contentType === 3 ? "全局脚本(GlobalLua)" : "未检测到(Unknown)" %></td>
         <td>
-         <% if (content.songInfo.difficulties[0] === 0) { %>-<% } else
-            if (content.songInfo.difficulties[0] === -2) { %>杂<% } else                                                    
-            if (content.songInfo.difficulties[0] === -3) { %>旧<% } else  
-            if (content.songInfo.difficulties[0] === -4) { %>秘<% } else
-            if (content.songInfo.difficulties[0] === -5) { %>点<% } else
-            if (content.songInfo.difficulties[0] === -6) { %>红<% } else
-            if (content.songInfo.difficulties[0] === -7) { %>妖<% } else
-            if (content.songInfo.difficulties[0] === -8) { %>永<% } else
-            if (content.songInfo.difficulties[0] === -9) { %>花<% } else
-            if (content.songInfo.difficulties[0] === -10) { %>风<% } else
-            if (content.songInfo.difficulties[0] === -11) { %>地<% } else
-            if (content.songInfo.difficulties[0] === -12) { %>船<% } else
-            if (content.songInfo.difficulties[0] === -13) { %>庙<% } else
-            if (content.songInfo.difficulties[0] === -14) { %>辉<% } else
-            if (content.songInfo.difficulties[0] === -15) { %>绀<% } else
-            if (content.songInfo.difficulties[0] === -16) { %>璋<% } else
-            if (content.songInfo.difficulties[0] === -17) { %>鬼<% } else
-            if (content.songInfo.difficulties[0] === -18) { %>虹<% } else
-            if (content.songInfo.difficulties[0] === -19) { %>兽<% } %>
-        </td> 
+         <%= content.from === 2 ? "杂" : content.from === 3 ? "旧" : content.from === 4 ? "秘" : content.from === 5 ? "点" : content.from === 6 ? "红" : content.from === 7 ? "妖" : content.from === 8 ? "永" : content.from === 9 ? "花" : content.from === 10 ? "风" : content.from === 11 ? "地" : content.from === 12 ? "船" : content.from === 13 ? "庙" : content.from === 14 ? "辉" : content.from === 15 ? "绀" : content.from === 16 ? "璋" : content.from === 17 ? "鬼" : content.from === 18 ? "虹" : content.from === 19 ? "兽" : "-" %></td>
         <td><%= content.title %></td>
         <td><%= content.publisher %></td>
         <td><%= content.downloadCount %></td>
