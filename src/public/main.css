@@ -15,13 +15,13 @@ h1 {
 
 .title {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   color: #111;
   font-size: 25px;
 }
 
 #search {
-  background-color: #ffffff;
+  background-color: #ffffff00;
   color: #111;
 }
 
@@ -37,7 +37,11 @@ h1 {
 }
 
 table {
-  width: 100%;
+  width: 150%;
+  background-color: transparent;
+  color: inherit;
+  border-collapse: collapse;
+  opacity: 0.75;
 }
 
 th {
@@ -114,3 +118,21 @@ th.sortable.sorted-desc .sort-arrow {
     font-size: 20px;
   }
 }
+
+.bgimg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      z-index: -10;
+      zoom: 1;
+      background-color: #fff;
+      background-image: url(https://th.bing.com/th/id/R.167efdd588c795082eca759fc14d0787?rik=Jc5NusoDv9Z2aw&riu=http%3a%2f%2fd.hiphotos.baidu.com%2fzhidao%2fpic%2fitem%2ff31fbe096b63f62498a45fc18644ebf81b4ca373.jpg&ehk=Ona7eUyLsnKcFqaZda%2fOCCOCWi6USZgL1V66q08zaaQ%3d&risl=&pid=ImgRaw&r=0) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-position: center 0;
+    }
