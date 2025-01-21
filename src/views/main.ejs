@@ -53,6 +53,7 @@
         <td><%= content.publisher %></td>
         <td><%= content.downloadCount %></td>
         <td><%= content.voteAverageScore %></td>
+        <% if (content.contentType === 0) { %>
         <td class="difficulty">
          <span class="diff" id="diff-easy"><% if (content.songInfo.difficulties[1] === 0) { %>-<% } else if (content.songInfo.difficulties[1] === -1) { %>X<% } else                                                   { %><%= content.songInfo.difficulties[1] %><% } %></span>   
          <span class="diff" id="diff-normal"><% if (content.songInfo.difficulties[1] === 0) { %>-<% } else if (content.songInfo.difficulties[1] === -1) { %>X<% } else                                                   { %><%= content.songInfo.difficulties[1] %><% } %></span>
@@ -60,6 +61,7 @@
          <span class="diff" id="diff-extra"><% if (content.songInfo.difficulties[3] === 0) { %>-<% } else if (content.songInfo.difficulties[3] === -1) { %>X<% } else                                                      { %><%= content.songInfo.difficulties[3] %><% } %></span>
          <span class="diff" id="diff-lunatic"><% if (content.songInfo.difficulties[4] === 0) { %>-<% } else if (content.songInfo.difficulties[4] === -1) { %>X<% } else{ %><%= content.songInfo.difficulties[4] %><% } %></span>
         </td>
+        <% } else { %> <td><p class="text-unavailable">-</p></td> <% } %>
        </tr>
       <% }); %>
      </tbody>
